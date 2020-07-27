@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IRAnonymized.Assignment.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:IRAnonymized.Assignment.WebApi.Controllers.ImportController.Post(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Import a file.
+            </summary>
+            <param name="file">File to be imported.</param>
+            <returns></returns>
+        </member>
+        <member name="T:IRAnonymized.Assignment.WebApi.Controllers.StoreItemsJsonController">
+            <summary>
+            Manages the <see cref="T:IRAnonymized.Assignment.WebApi.Models.StoreItemModel"/> stored in the Json type Database.
+            </summary>
+        </member>
+        <member name="M:IRAnonymized.Assignment.WebApi.Controllers.StoreItemsJsonController.Get(System.String)">
+            <summary>
+            Get a <see cref="!:StoreItem" /> with the specified <paramref name="id" />.
+            </summary>
+            <param name="id">Unique identifier of the item.</param>
+            <returns><see cref="!:StoreItem" /> for the specified <paramref name="id" /></returns>
+        </member>
+        <member name="M:IRAnonymized.Assignment.WebApi.Controllers.StoreItemsJsonController.Get(System.Int32,System.Int32)">
+            <summary>
+            Get all <see cref="!:StoreItemDto"/> items following the Pagination structure.
+            </summary>
+            <param name="pageNumber">Page number for the items.</param>
+            <param name="numberOfItems">Number of items to be retrieved.</param>
+            <returns>A <see cref="T:System.Collections.Generic.ICollection`1"/> of <see cref="!:StoreItemDto"/>.</returns>
+        </member>
+        <member name="T:IRAnonymized.Assignment.WebApi.Controllers.StoreItemsMongoController">
+            <summary>
+            Manages the <see cref="T:IRAnonymized.Assignment.WebApi.Models.StoreItemModel"/> stored in the Mongo type Database.
+            </summary>
+        </member>
+        <member name="M:IRAnonymized.Assignment.WebApi.Controllers.StoreItemsMongoController.Get(System.String)">
+            <summary>
+            Get a <see cref="!:StoreItem" /> with the specified <paramref name="id" />.
+            </summary>
+            <param name="id">Unique identifier of the item.</param>
+            <returns><see cref="!:StoreItem" /> for the specified <paramref name="id" /></returns>
+        </member>
+        <member name="M:IRAnonymized.Assignment.WebApi.Controllers.StoreItemsMongoController.Get(System.Int32,System.Int32)">
+            <summary>
+            Get all <see cref="!:StoreItemDto"/> items following the Pagination structure.
+            </summary>
+            <param name="pageNumber">Page number for the items.</param>
+            <param name="numberOfItems">Number of items to be retrieved.</param>
+            <returns>A <see cref="T:System.Collections.Generic.ICollection`1"/> of <see cref="!:StoreItemDto"/>.</returns>
+        </member>
+        <member name="M:IRAnonymized.Assignment.WebApi.Extensions.ExceptionHandlerMiddlewareExtensions.ConfigureExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Exception handler.
+            </summary>
+            <param name="app"></param>
+        </member>
+        <member name="T:IRAnonymized.Assignment.WebApi.Infrastructure.DataInitializerHostedService">
+            <summary>
+            Hosted service to import a file from the disk at startup.
+            </summary>
+        </member>
+        <member name="T:IRAnonymized.Assignment.WebApi.Models.ErrorDetails">
+            <summary>
+            Error model to be displayed for Internal Server Error.
+            </summary>
+        </member>
+        <member name="P:IRAnonymized.Assignment.WebApi.Models.ErrorDetails.StatusCode">
+            <summary>
+            Status code of the exception.
+            </summary>
+        </member>
+        <member name="P:IRAnonymized.Assignment.WebApi.Models.ErrorDetails.Message">
+            <summary>
+            Message of the exception.
+            </summary>
+        </member>
+        <member name="T:IRAnonymized.Assignment.WebApi.Models.StoreItemModel">
+            <summary>
+            Store item model to be displayed to the end user.
+            </summary>
+        </member>
+    </members>
+</doc>

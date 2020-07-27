@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "IRAnonymized.Assignment.Consummers": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

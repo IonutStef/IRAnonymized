@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    
+    <IsPackable>false</IsPackable>
+    
+    <ApplicationIcon />
+    
+    <OutputType>Library</OutputType>
+    
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="given-fixture" Version="1.1.33" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IRAnonymized.Assignment.Data\IRAnonymized.Assignment.Data.csproj" />
+    <ProjectReference Include="..\IRAnonymized.Assignment.Utilities\IRAnonymized.Assignment.Services.csproj" />
+  </ItemGroup>
+
+</Project>
